@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ellie's Fate</title>
+    <link rel="stylesheet" href="gamestyle.css" />
+    <link href="https://fonts.cdnfonts.com/css/sketchalot" rel="stylesheet" />
+  </head>
+  <body onclick="progressStory()">
+    <div class="room">
+      <img src="images/room.webp" alt="Ellie's Room" class="background" />
+    </div>
+
+    <div class="ellie-container">
+      <img
+        src="images/ellie.png"
+        alt="Ellie Thinking"
+        class="ellie"
+        id="ellie"
+      />
+      <img
+        src="images/ellieshocked.png"
+        alt="Ellie Shocked"
+        class="ellie shocked"
+        id="ellie-shocked"
+      />
+    </div>
+
+    <div class="thought-box" id="thought-box">
+      <img src="images/elliethought.png" class="thought-bubble" />
+      <p id="thought-text"></p>
+    </div>
+
+    <div class="popup" id="popup">
+      <img src="images/letter.png" alt="Mystic Letter" />
+      <button class="close-btn" id="close-btn">×</button>
+    </div>
+
+    <div class="shadow" id="shadow">
+      <img src="images/shadow.png" alt="Shadowy Figure" />
+      <div class="shadow-dialogue" id="shadow-dialogue">
+        <img src="images/shadowdia.png" class="thought-bubble" />
+        <p id="shadow-text">
+          "<strong>Ellie, you have been chosen. </strong> <br> You have two
+          choices:<br> <strong> Walk away</strong> and leave the past behind,<br> never
+          uncovering the truth.<br> OR <br> <strong>Accept </strong>  the invitation and undergo five
+          trials <br> to reclaim your rightful heritage!"
+        </p>
+      </div>
+    </div>
+
+    <div class="choice-container" id="choice-container" style="display: none">
+      <div class="overlay"></div>
+      <div class="choice">
+        <p>Choose your answer:</p>
+        <button onclick="selectChoice(1)">Accept</button>
+        <button onclick="selectChoice(2)">Walk Away</button>
+      </div>
+    </div>
+
+    <script src="gamescript.js"></script>
+  </body>
+</html>
