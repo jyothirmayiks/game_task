@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trial 2 - The Trial of Time</title>
+    <link rel="stylesheet" href="trial1.css">
+    <link href="https://fonts.cdnfonts.com/css/sketchalot" rel="stylesheet" />
+</head>
+<body>
+
+    <div id="countdown-screen">
+        <h1>Trial 2: The Trial of Time</h1>
+        <p id="countdown-text">Starting in 3...</p>
+    </div>
+
+    <div id="game-session" class="hidden">
+        <h2>The Trial of Time</h2>
+        <p class="riddle-text">"I move against time’s endless tide,
+            Choose me, and past doors open wide."</p>
+        <div class="clock-container">
+            <img id="forward-clock" src="images/forwardclock.gif" alt="Forward Moving Clock">
+            <img id="backward-clock" src="images/backwardclock.gif" alt="Backward Moving Clock">
+        </div>
+    </div>
+
+    <div id="success-popup" class="popup hidden">
+        <p>Brilliant!  <span style="font-size: 1.2rem;">⏳ </span><br>You have grasped the secret of time reversal.</p>
+        <button onclick="nextPhase()">Proceed</button>
+    </div>
+
+    <div id="failure-popup" class="popup hidden">
+        <p>Oops! <span style="font-size: 1.2rem;">❌ </span><br>Time moves too fast. Try again.</p>
+        <button onclick="restartGame()">Retry</button>
+    </div>
+
+    <div id="completion-popup" class="popup hidden">
+        <p>Congratulations! You have completed Trial 2.</p>
+        <button onclick="unlockGift()">Unlock Your Gift 🎁</button>
+    </div>
+
+    <div id="gift-box" class="popup hidden">
+        <img src="images/witchhat.webp" alt="Hourglass" onclick="showNextPopup()">
+    </div>
+
+    <div id="next-trial-popup" class="popup hidden">
+        <p>Trial 2 completed. Do you want to proceed to the Final Trial?</p>
+        <button onclick="nextTrial()">Yes</button>
+        <button onclick="restartGame()">No</button>
+    </div>
+
+    <script src="trial2.js"></script>
+</body>
+</html>

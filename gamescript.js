@@ -51,7 +51,7 @@ function closePopup() {
 
 function selectChoice(choice) {
     if (choice === 1) {
-        window.location.href = "trials.html";
+        window.location.href = "trial1.html";
     } else if (choice === 2) {
         location.reload();
     }
