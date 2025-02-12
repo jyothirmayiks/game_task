@@ -58,7 +58,7 @@ function showNextPopup() {
 }
 
 function nextTrial() {
-    window.location.href = "trial3.html";
+    window.location.href = "finaltrial.html";
 }
 
 function restartGame() {
