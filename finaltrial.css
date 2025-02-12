@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: 'Arial', sans-serif;
     text-align: center;
+    background-size: cover !important;
     background: url('images/pixelcut-export.jpg') no-repeat center center fixed;
     min-height: 100vh;
     overflow: hidden;
@@ -111,3 +112,125 @@ body {
 #gift-box {
     background: none;
 }
+
+@media (max-width: 1024px) {
+    #game-session {
+        padding: 30px;
+        font-size: 0.9rem;
+        line-height: 2.5rem;
+    }
+
+    .mark-container {
+        gap: 30px;
+    }
+
+    .mark-container img {
+        width: 200px;
+    }
+
+    .popup {
+        width: 80%;
+        padding: 15px;
+    }
+
+    #gift-box img {
+        width: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    #game-session {
+        padding: 10px;
+        font-size: 0.5rem;
+        line-height: 1.5rem;
+        margin-top: 60px;
+    }
+
+    #game-session h2{
+        font-size: 1.5rem;
+        line-height: 3.5rem;
+    }
+
+    .mark-container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        gap: 15px;
+        margin-left: 150px;
+        margin-top: 50px;
+    }
+
+    .mark-container img {
+        width: 150px;
+    }
+
+    .popup {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .popup p {
+        font-size: 0.7rem;
+    }
+
+    .popup button {
+        font-size: 0.7rem;
+        padding: 8px 10px;
+    }
+
+    #gift-box img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    #countdown-screen {
+        font-size: 0.8em;
+        padding: 10px;
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+    }
+
+    #game-session {
+        padding: 10px;
+        font-size: 0.5rem;
+        line-height: 1.5rem;
+        margin-top: 60px;
+    }
+
+    #game-session h2{
+        font-size: 1.5rem;
+        line-height: 3.5rem;
+    }
+
+    .mark-container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        gap: 15px;
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+
+    .mark-container img {
+        width: 120px;
+    }
+
+    .popup {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .popup p {
+        font-size: 0.6rem;
+    }
+
+    .popup button {
+        font-size: 0.6rem;
+        padding: 6px 8px;
+    }
+
+    #gift-box img {
+        width: 250px;
+    }
+}
+

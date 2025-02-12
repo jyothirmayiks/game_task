@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: 'Arial', sans-serif;
     text-align: center;
+    background-size: cover !important;
     background: url('images/pixelcut-export.jpg') no-repeat center center fixed;
     min-height: 100vh;
     overflow: hidden;
@@ -190,4 +191,125 @@ body {
 
 #gift-box {
     background: none;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    #countdown-screen h1 {
+        font-size: 1.5rem;
+    }
+
+    #countdown-text {
+        font-size: 1rem;
+    }
+
+    #game-session {
+        padding: 30px;
+        font-size: 1rem;
+    }
+
+    .candle-container img {
+        width: 400px;
+        margin-top: 30px;
+    }
+
+    .popup {
+        width: 60%;
+        padding: 15px;
+    }
+
+    .popup p {
+        font-size: 0.9rem;
+    }
+
+    .popup button {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    #game-session {
+        padding: 20px;
+    }
+
+    .riddle-text {
+        font-size: 0.9rem;
+        margin-top: 30px;
+    }
+
+    .candle-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .candle-container img {
+        width: 250px;
+        margin-top: 30px;
+    }
+
+    .popup {
+        width: 70%;
+        padding: 12px;
+    }
+
+    .popup p {
+        font-size: 0.8rem;
+        line-height: 2;
+    }
+
+    .popup button {
+        font-size: 0.7rem;
+        padding: 8px 10px;
+    }
+
+    #gift-box img {
+        width: 250px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    #countdown-screen h1 {
+        font-size: 1.5rem;
+    }
+
+    #countdown-text {
+        font-size: 1rem;
+    }
+
+    #game-session {
+        padding: 10px;
+    }
+
+    .riddle-text {
+        font-size: 0.7rem;
+        margin-top: 68px;
+    }
+
+    .candle-container img {
+        width: 200px;
+        margin-top: 30px;
+    }
+
+    .popup {
+        width: 80%;
+        padding: 10px;
+    }
+
+    .popup p {
+        font-size: 0.7rem;
+        line-height: 1.8;
+    }
+
+    .popup button {
+        font-size: 0.7rem;
+        padding: 6px 8px;
+    }
+
+    #gift-box img {
+        width: 200px;
+    }
 }

@@ -195,7 +195,48 @@ body {
         width: 350px;
         height: 220px;
     }
+    .ellie-container {
+        left: -779px;
+        top: 405px;
+    }
+    .ellie {
+        width: 800px;
+    }
+    .thought-bubble1 {
+        width: 100% !important;
+        margin-top: 100px;
+        margin-left: -250px;
+    }
+
+    #thought-text {
+        font-size: 0.85rem;
+        left: 42%;
+        margin-top: 75px;
+    }
+    .shadow {
+        top: 120px;
+        right: -150px;
+    }
+    .shadow img {
+        width: 100%;
+        margin-top: 250px;
+        margin-left: 50px;
+    }
+    img.thought-bubble {
+        width: 100%;
+        margin-top: 80px;
+        margin-left: 80px;
+    }
+    
+    .shadow-dialogue p {
+        top: 58%;
+        right: -26%;
+        
+        font-size: 8px;
+        letter-spacing: 0.1rem; 
+    }
 }
+
 
 @media (max-width: 768px) {
     .flash-container {
@@ -203,15 +244,53 @@ body {
         height: 200px;
     }
     .ellie-container {
-        bottom: 30px;
+        left: -779px;
+        top: 405px;
+    }
+    .ellie {
+        width: 800px;
+    }
+    .thought-bubble1 {
+        width: 100% !important;
+        margin-top: 100px;
+        margin-left: -250px;
+    }
+
+    #thought-text {
+        font-size: 0.85rem;
+        left: 42%;
+        margin-top: 75px;
+    }
+    .shadow {
+        top: 120px;
+        right: -150px;
+    }
+    .shadow img {
+        width: 100%;
+        margin-top: 250px;
+        margin-left: 50px;
+    }
+    img.thought-bubble {
+        width: 100%;
+        margin-top: 80px;
+        margin-left: 80px;
+    }
+    
+    .shadow-dialogue p {
+        top: 58%;
+        right: -26%;
+        
+        font-size: 8px;
+        letter-spacing: 0.1rem; 
     }
     .choice {
         width: 80%;
     }
 }
 
+
 @media (max-width: 480px) {
-    body{
+    body {
         overflow: hidden;
     }
     .flash-container {
@@ -219,20 +298,63 @@ body {
         height: 180px;
     }
     .ellie-container {
-        bottom: 20px;
-    }
-    .choice {
-        width: 90%;
+        left: -779px;
+        top: 495px;
     }
     .ellie {
-        width: 200px;
+        width: 628px;
     }
-    .thought-box img {
-        width: 200px;
+    .thought-bubble1 {
+        width: 70% !important;
+        margin-top: 287px;
+        margin-left: -313px;
+    }
+    #thought-text {
+        font-size: 0.4rem;
+        left: 32%;
+        margin-top: 173px;
+    }
+    
+    #popup {
+        left: 41%;
+        width: 258px;
     }
 
-    #thought-text{
-        font-size: 10px;
-        left: 0;
+    #ellie-shocked {
+        width: 250px;
+        height: 300px;
+        margin-top: -33px;
+        margin-left: 37%;
+    }
+
+    .shadow img {
+        width: 80%;
+        margin-top: 321px;
+        margin-left: 154px;
+    }
+
+    .shadow-dialogue p {
+        top: 65%;
+        right: -56%;
+        
+        font-size: 4.5px;
+        letter-spacing: 0.1rem; 
+    }
+
+    img.thought-bubble {
+        width: 76%;
+        margin-top: 150px;
+        margin-left: 256px;
+    }
+
+    .choice {
+        width: 65%;
+    }
+    .choice p {
+        font-size: 0.7rem;
+    }
+    .choice button {
+        font-size: 0.5rem;
+        padding: 8px 10px;
     }
 }
