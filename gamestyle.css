@@ -291,7 +291,8 @@ body {
 
 @media (max-width: 480px) {
     body {
-        overflow: hidden;
+        overflow: hidden ;
+        background-size: cover;
     }
     .flash-container {
         width: 250px;
@@ -328,23 +329,23 @@ body {
     }
 
     .shadow img {
-        width: 80%;
+        width: 70%;
         margin-top: 321px;
         margin-left: 154px;
     }
 
     .shadow-dialogue p {
         top: 65%;
-        right: -56%;
+        right: -61%;
         
-        font-size: 4.5px;
+        font-size: 4px;
         letter-spacing: 0.1rem; 
     }
 
     img.thought-bubble {
-        width: 76%;
+        width:50%;
         margin-top: 150px;
-        margin-left: 256px;
+        margin-left: 450px;
     }
 
     .choice {
