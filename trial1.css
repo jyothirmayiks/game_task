@@ -65,6 +65,7 @@ body {
     transform: scale(1.1);
 }
 
+
 @keyframes movingBorder {
     0% {
       border-image-source: linear-gradient(90deg, rgb(207, 53, 53), transparent);

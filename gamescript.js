@@ -1,12 +1,13 @@
 let step = 0;
 
 window.onload = function() {
-    document.getElementById("close-btn").addEventListener("click", closePopup);
+    document.getElementById("game-container").addEventListener("click", progressStory);
+    document.querySelector('.ellie-container').style.display = "none"; 
 };
 
 function progressStory() {
     if (step === 0) {
-        document.querySelector('.ellie-container').style.transform = "translateX(650px)";
+        document.querySelector('.ellie-container').style.display = "block"; 
     } else if (step === 1) {
         document.getElementById("thought-box").style.display = "block";
         document.getElementById("thought-text").innerText = "Where did this letter come from?";
@@ -15,21 +16,14 @@ function progressStory() {
     } else if (step === 3) {
         document.getElementById("popup").style.display = "block";
         document.getElementById("thought-box").style.display = "none";
-    } 
-    
-    else if (step === 4) {
-        
+    } else if (step === 4) {
+        document.getElementById("popup").style.display = "none";
         document.getElementById("thought-box").style.display = "block";
         document.getElementById("ellie").style.display = "none";  
         document.getElementById("ellie-shocked").style.display = "block"; 
         document.getElementById("thought-text").innerText = "Wait... What was that noise?";
     } else if (step === 5) {
-        
-        let shadowElement = document.getElementById("shadow");
-        shadowElement.style.display = "block";
-        setTimeout(() => {
-            shadowElement.style.right = "50px"; 
-        }, 100);
+        document.getElementById("shadow").style.display = "block"; 
     } else if (step === 6) {
         document.getElementById("thought-box").style.display = "none";
         document.getElementById("shadow-dialogue").style.display = "block";
@@ -42,11 +36,6 @@ function progressStory() {
     }
 
     step++;
-}
-
-function closePopup() {
-    document.getElementById("popup").style.display = "none";
-    step = 4; 
 }
 
 function selectChoice(choice) {
