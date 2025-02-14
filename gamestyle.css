@@ -312,14 +312,14 @@ body {
         right: 18%;
     }
     .shadow-dialogue {
-        width: 200%;
+        width: 210%;
         right: -10%;
-        top: -120%;
+        top: -90%;
     }
 
     .shadow-dialogue p{
         font-size: 0.18rem;
-        top: 45%;
+        top: 50%;
         
     }
     .choice {
@@ -332,4 +332,35 @@ body {
         font-size: 0.6rem;
         padding: 8px 8px;
     }
+}
+
+
+@media (max-width:310px){
+    .shadow-dialogue {
+        width: 200%;
+        right: -10%;
+        top: -50%;
+    }
+
+    .shadow-dialogue p{
+        font-size: 0.1rem;
+        top: 50%;
+        
+    }
+}
+
+
+@media (max-width:280px){
+    .shadow-dialogue {
+        width: 200%;
+        right: -10%;
+        top: -30%;
+    }
+
+    .shadow-dialogue p{
+        font-size: 0.1rem;
+        top: 50%;
+        
+    }
+
 }
