@@ -5,56 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ellie's Fate</title>
     <link rel="stylesheet" href="gamestyle.css" />
-    <link href="https://fonts.cdnfonts.com/css/sketchalot" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/mangoli" rel="stylesheet" />
   </head>
   <body onclick="progressStory()">
     <div class="room">
       <img src="images/room.webp" alt="Ellie's Room" class="background" />
     </div>
 
+    
     <div class="ellie-container">
-      <img
-        src="images/ellie.png"
-        alt="Ellie Thinking"
-        class="ellie"
-        id="ellie"
-      />
-      <img
-        src="images/ellieshocked.png"
-        alt="Ellie Shocked"
-        class="ellie shocked"
-        id="ellie-shocked"
-      />
+      <img src="images/ellie.png" alt="Ellie Thinking" class="ellie" id="ellie" />
     </div>
 
-    <div class="thought-box" id="thought-box">
-      <img src="images/elliethought.png" class="thought-bubble1" />
-      <p id="thought-text"></p>
+    
+    <div class="dialogue-box" id="dialogue-box">
+      <p id="dialogue-text"></p>
     </div>
 
+    
     <div class="popup" id="popup">
       <img src="images/letter.png" alt="Mystic Letter" />
     </div>
 
+    
     <div class="shadow" id="shadow">
       <img src="images/shadow.png" alt="Shadowy Figure" />
       <div class="shadow-dialogue" id="shadow-dialogue">
-        <img src="images/shadowdia.png" class="thought-bubble" />
-        <p id="shadow-text">
-          "Ellie, you have been chosen.<br> You have two
-          choices:<br> Walk awayand leave the past behind,<br> never
-          uncovering the truth.<br> OR <br> Accept the invitation and undergo three
-          trials <br> to reclaim your rightful heritage!"
-        </p>
-      </div>
-    </div>
-
-    <div class="choice-container" id="choice-container" style="display: none">
-      <div class="overlay"></div>
-      <div class="choice">
-        <p>Choose your answer:</p>
-        <button onclick="selectChoice(1)">Accept</button>
-        <button onclick="selectChoice(2)">Walk Away</button>
+        <p id="shadow-text"></p>
       </div>
     </div>
 
