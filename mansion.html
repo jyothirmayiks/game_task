@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ellie's Fate - Scene 1</title>
+    <link rel="stylesheet" href="mansion.css" />
+    <link href="https://fonts.cdnfonts.com/css/mangoli" rel="stylesheet" />
+  </head>
+  <body onclick="progressStory()">
+    
+    <div class="room">
+      <img src="images/mansion.webp" alt="Mansion Exterior" class="background" id="background" />
+    </div>
+
+    
+    <div class="ellie-container">
+      <img src="images/ellie.png" alt="Ellie" class="ellie" id="ellie" />
+    </div>
+
+    <div class="dialogue-box" id="dialogue-box">
+      <p id="dialogue-text"></p>
+    </div>
+
+    
+    <div class="shadow" id="shadow">
+      <img src="images/shadow.png" alt="Shadowy Figure" />
+      <div class="shadow-dialogue" id="shadow-dialogue">
+        <p id="shadow-text"></p>
+      </div>
+    </div>
+
+    <script src="mansion.js"></script>
+  </body>
+</html>
