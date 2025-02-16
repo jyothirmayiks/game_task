@@ -4,19 +4,17 @@ let currentText = "";
 let currentIndex = 0;
 let isTyping = false;
 
-
 const typingSound = new Audio("audio/keyboard-typing-4-292591.mp3");
 const crumbleSound = new Audio("audio/exploding-building-1-185114.mp3");
 const backgroundMusic = new Audio("audio/scary-music-box-for-spooky-scenes-165983.mp3");
-
 
 backgroundMusic.loop = true;
 backgroundMusic.volume = 0.5;
 
 window.onload = function () {
   document.getElementById("dialogue-box").style.display = "none";
+  document.getElementById("game-over-screen").style.display = "none"; 
 
-  
   document.body.addEventListener(
     "click",
     () => {
@@ -37,24 +35,26 @@ function progressStory() {
 
   if (step === 0) {
     document.getElementById("dialogue-box").style.display = "block";
-    typeText("Ellie; No... I can’t take it. Something about this feels... wrong.", () => {
+    typeText("Ellie: No... I can’t take it. Something about this feels... wrong.", () => {
       step++;
       document.body.addEventListener("click", progressStory);
     });
   } else if (step === 1) {
-    typeText("Ellie; Wait—what's happening? The walls... they’re crumbling!", () => {
+    typeText("Ellie: Wait—what's happening? The walls... they’re crumbling!", () => {
       step++;
       crumbleSound.volume = 0.7;
-      crumbleSound.play(); 
+      crumbleSound.play();
       document.body.addEventListener("click", progressStory);
     });
   } else if (step === 2) {
-    typeText("Ellie; No, no, no! I have to get out— *cough* The dust— I... I can’t breathe...", () => {
+    typeText("Ellie: No, no, no! I have to get out— *cough* The dust— I... I can’t breathe...", () => {
       step++;
       setTimeout(() => {
         fadeToBlack();
       }, 3000);
     });
+  } else if (step === 3) {
+    gameOver();
   }
 }
 
@@ -72,7 +72,19 @@ function fadeToBlack() {
 
   setTimeout(() => {
     fadeDiv.style.opacity = "1";
+    setTimeout(() => {
+      gameOver();
+    }, 2000);
   }, 100);
+}
+
+function gameOver() {
+  document.getElementById("game-over-screen").style.display = "flex";
+  document.body.addEventListener("click", restartGame, { once: true });
+}
+
+function restartGame() {
+    window.location.href = "trial2.html"; 
 }
 
 function typeText(text, callback) {
@@ -82,7 +94,6 @@ function typeText(text, callback) {
   currentIndex = 0;
   isTyping = true;
 
-  
   typingSound.loop = true;
   typingSound.play();
 
@@ -94,8 +105,8 @@ function typeText(text, callback) {
     } else {
       isTyping = false;
       typingSound.pause();
-      typingSound.currentTime = 0; 
-      if (callback) callback(); 
+      typingSound.currentTime = 0;
+      if (callback) callback();
     }
   }
 

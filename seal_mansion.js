@@ -48,10 +48,21 @@ function progressStory() {
     });
   } else if (step === 2) {
     typeText("Ellie; I’ve saved the world, but at what cost?", () => {
-      step++;
+        setTimeout(showGameOver, 2000); 
     });
   }
 }
+
+function showGameOver() {
+    let gameOverScreen = document.getElementById("game-over");
+    gameOverScreen.style.visibility = "visible";
+    gameOverScreen.style.opacity = "1";
+  }
+  
+ 
+  function restartGame() {
+    window.location.href = "garden.html"; 
+  }
 
 function typeText(text, callback) {
   let dialogueElement = document.getElementById("dialogue-text");

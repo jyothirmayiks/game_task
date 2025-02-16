@@ -45,3 +45,37 @@ body {
     text-align: left;
     display: none;
   }
+
+  .game-over-screen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(8, 27, 49, 0.9);
+    color: rgb(126, 168, 192);
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .game-over-screen button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: rgb(126, 168, 192);
+    color: rgba(8, 27, 49, 0.9);
+    font-family: 'Mangoli', sans-serif;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s;
+  }
+  
+  .game-over-screen button:hover {
+    background-color: rgba(130, 161, 199, 0.9);
+  }
+  

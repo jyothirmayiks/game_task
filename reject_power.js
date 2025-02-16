@@ -44,10 +44,21 @@ function progressStory() {
     });
   } else if (step === 2) {
     typeText("Ellie; They're here... I can hear them whispering… watching. I have to keep moving—I have to get out!", () => {
-      step++;
+        setTimeout(showGameOver, 2000); 
     });
   }
 }
+
+function showGameOver() {
+    let gameOverScreen = document.getElementById("game-over");
+    gameOverScreen.style.visibility = "visible";
+    gameOverScreen.style.opacity = "1";
+  }
+  
+ 
+  function restartGame() {
+    window.location.href = "trial2.html"; 
+  }
 
 function typeText(text, callback) {
   let dialogueElement = document.getElementById("dialogue-text");

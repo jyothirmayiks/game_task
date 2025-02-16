@@ -44,10 +44,21 @@ function progressStory() {
     });
   } else if (step === 2) {
     typeText("Ellie; I will restore the sisterhood and protect this world. This is my destiny.", () => {
-      step++;
+        setTimeout(showGameOver, 2000); 
     });
   }
 }
+
+function showGameOver() {
+    let gameOverScreen = document.getElementById("game-over");
+    gameOverScreen.style.visibility = "visible";
+    gameOverScreen.style.opacity = "1";
+  }
+  
+ 
+  function restartGame() {
+    window.location.href = "index.html"; 
+  }
 
 function typeText(text, callback) {
   let dialogueElement = document.getElementById("dialogue-text");

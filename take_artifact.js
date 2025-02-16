@@ -4,19 +4,17 @@ let currentText = "";
 let currentIndex = 0;
 let isTyping = false;
 
-
 const typingSound = new Audio("audio/keyboard-typing-4-292591.mp3");
 const explosionSound = new Audio("audio/large-underwater-explosion-190270.mp3");
 const backgroundMusic = new Audio("audio/scary-music-box-for-spooky-scenes-165983.mp3");
 
-
 backgroundMusic.loop = true;
-backgroundMusic.volume = 0.5; 
+backgroundMusic.volume = 0.5;
 
 window.onload = function () {
   document.getElementById("dialogue-box").style.display = "none";
-  
- 
+  document.getElementById("game-over-screen").style.display = "none"; 
+
   document.body.addEventListener(
     "click",
     () => {
@@ -33,7 +31,7 @@ window.onload = function () {
 function progressStory() {
   if (isTyping) return;
 
-  console.log(`Step: ${step}`); 
+  console.log(`Step: ${step}`);
 
   if (step === 0) {
     document.getElementById("dialogue-box").style.display = "block";
@@ -51,14 +49,14 @@ function progressStory() {
       step++;
       setTimeout(() => {
         triggerExplosion();
-      }, 2000); 
+      }, 2000);
     });
   } else if (step === 3) {
     typeText("*A deafening explosion shakes the chamber, engulfing everything in flames.*", () => {
       step++;
       setTimeout(() => {
         gameOver();
-      }, 3000); 
+      }, 3000);
     });
   }
 }
@@ -66,25 +64,19 @@ function progressStory() {
 function triggerExplosion() {
   explosionSound.volume = 0.8;
   explosionSound.play();
-  document.body.style.backgroundColor = "red"; 
+  document.body.style.backgroundColor = "red";
   setTimeout(() => {
-    document.body.style.backgroundColor = "black"; 
+    document.body.style.backgroundColor = "black";
   }, 500);
 }
 
 function gameOver() {
-  document.body.innerHTML = `
-    <div style="text-align:center; color:white; font-size:2rem; margin-top:20%;">
-      <h1>Game Over</h1>
-      <p>The artifact's power was too much to handle.</p>
-      <button onclick="restartGame()" style="padding:10px 20px; font-size:1.2rem;">Try Again</button>
-    </div>
-  `;
+  document.getElementById("game-over-screen").style.display = "flex"; 
   backgroundMusic.pause();
 }
 
 function restartGame() {
-  location.reload(); 
+    window.location.href = "trial2.html"; 
 }
 
 function typeText(text, callback) {
@@ -94,7 +86,6 @@ function typeText(text, callback) {
   currentIndex = 0;
   isTyping = true;
 
-  
   typingSound.loop = true;
   typingSound.play();
 
@@ -107,7 +98,7 @@ function typeText(text, callback) {
       isTyping = false;
       typingSound.pause();
       typingSound.currentTime = 0;
-      if (callback) callback(); 
+      if (callback) callback();
     }
   }
 
