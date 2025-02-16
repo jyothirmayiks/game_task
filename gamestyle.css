@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: black ;
     color: white;
     text-align: center;
     margin: 0;
@@ -94,23 +94,24 @@ body {
     color: rgb(126, 168, 192);
     font-family: 'Mangoli', sans-serif;                                                                                 
     font-size: 1.8rem;
-    text-align: right !important;
+    text-align: left;
     display: none;
 }
 
 
 @media screen and (max-width: 1024px) {
     .ellie {
-        width: 400px;
+        width: 500px;
     }
 
     .ellie-container{
-        top: 50%;
+        top: 60%;
+        left: -10%;
     }
 
     .shadow {
         width: 250px;
-        top: 30%;
+        top: 50%;
     }
 
     .dialogue-box, .shadow-dialogue {
@@ -126,11 +127,12 @@ body {
 
 @media screen and (max-width: 768px) {
     .ellie {
-        width: 300px;
+        width: 500px;
     }
 
     .ellie-container{
-        top: 60%;
+        top: 70%;
+        left: -10%;
     }
 
     .shadow {
@@ -155,7 +157,7 @@ body {
     }
 
     .ellie-container{
-        top: 60%;
+        top: 65%;
         left: -20%;
     }
 

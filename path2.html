@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ellie's Fate - Alternate Path</title>
+    <link rel="stylesheet" href="path2.css" />
+    <link href="https://fonts.cdnfonts.com/css/mangoli" rel="stylesheet" />
+  </head>
+  <body>
+  
+    <div class="room">
+      <img src="images/secretroom.webp" alt="Secret Room" class="background" id="background" style="filter: brightness(50%);" />
+    </div>
+
+    
+    <div class="ellie-container">
+      <img src="images/ellie.png" alt="Ellie" class="ellie" id="ellie" />
+    </div>
+
+   
+    <div class="dialogue-box" id="dialogue-box">
+      <p id="dialogue-text"></p>
+    </div>
+
+    
+    <div class="cipher-puzzle" id="cipher-puzzle">
+      <p>Decipher the code to unlock the chest;</p>
+      <p><strong>Cipher;</strong> Wkh grru lv rshq exw wkh iruhvw qhyhu ohwv brx jr</p>
+      <input type="text" id="cipher-input" placeholder="Type your answer here..." />
+      <button onclick="checkCipher()">Submit</button>
+    </div>
+
+   
+    <div class="chest-unlocked" id="chest-unlocked">
+      <p>You unlocked the chest! Inside, you find a mysterious map.</p>
+      <img src="images/mapimage.png" alt="map" class="map-image" />
+      <button id="proceed-button">Examine the Map</button>
+    </div>
+
+    <script src="path2.js"></script>
+  </body>
+</html>

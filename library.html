@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ellie's Fate - Library</title>
+    <link rel="stylesheet" href="library.css" />
+    <link href="https://fonts.cdnfonts.com/css/mangoli" rel="stylesheet" />
+  </head>
+  <body>
+    
+    <div class="room">
+      <img src="images/library.webp" alt="Library" class="background" id="background" style="filter: brightness(50%);"/>
+    </div>
+
+    
+    <div class="ellie-container">
+      <img src="images/ellie.png" alt="Ellie" class="ellie" id="ellie" />
+    </div>
+
+    
+    <div class="dialogue-box" id="dialogue-box">
+      <p id="dialogue-text"></p>
+    </div>
+
+   
+    <div class="book-cipher" id="book-cipher">
+      <p>Decode the cipher for finding the correct book;</p>
+      <p><strong>Cipher;</strong> 2-15-15-11</p>
+      <input type="text" id="book-input" placeholder="Type your answer here..." />
+      <button onclick="checkBook()">Submit</button>
+    </div>
+
+    
+    <div class="book-found" id="book-found">
+      <p>You found the correct book! It contains a map of the mansion.</p>
+      <img src="images/book.png" alt="Book" class="book-image" />
+    </div>
+
+    <script src="library.js"></script>
+  </body>
+</html>

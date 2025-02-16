@@ -23,7 +23,7 @@ body {
   .ellie-container {
     position: absolute;
     top: 30%;
-    left: 10%;
+    left: 5%;
     transition: transform 1s ease-in-out;
   }
   
@@ -73,8 +73,7 @@ body {
     color: rgb(126, 168, 192);
     font-family: 'Mangoli', sans-serif;
     font-size: 1.8rem;
-    text-align: right;
-    direction: rtl !important;
+    text-align: left;
     display: none;
   }
   

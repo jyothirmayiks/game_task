@@ -4,10 +4,15 @@ let currentText = "";
 let currentIndex = 0;
 let isTyping = false;
 
+
 window.onload = function () {
   document.getElementById("dialogue-box").style.display = "none";
   document.getElementById("shadow").style.display = "none";
   document.getElementById("shadow-dialogue").style.display = "none";
+
+  let backgroundMusic = new Audio("audio/dramatic-hit(chosic.com).mp3"); 
+  backgroundMusic.volume = 0.6; 
+  backgroundMusic.play();
 };
 
 function progressStory() {
@@ -33,9 +38,27 @@ function progressStory() {
     document.getElementById("dialogue-box").style.display = "block";
     document.getElementById("shadow-dialogue").style.display = "none";
     typeText("Ellie; I don’t have time for this... But I need to know the truth.");
+  } else if (step === 5) {
+    setTimeout(() => {
+        window.location.href = "entrance.html";
+    }, 1000);
   }
 
   step++;
+}
+
+
+let typingSound = new Audio("audio/keyboard-typing-4-292591.mp3"); 
+
+function playTypingSound() {
+  typingSound.loop = true; 
+  typingSound.volume = 0.2; 
+  typingSound.play();
+}
+
+function stopTypingSound() {
+  typingSound.pause();
+  typingSound.currentTime = 0;
 }
 
 function typeText(text) {
@@ -44,6 +67,7 @@ function typeText(text) {
   currentText = text;
   currentIndex = 0;
   isTyping = true;
+  playTypingSound(); 
 
   function type() {
     if (currentIndex < currentText.length) {
@@ -52,6 +76,7 @@ function typeText(text) {
       setTimeout(type, typingSpeed);
     } else {
       isTyping = false;
+      stopTypingSound(); 
     }
   }
 
@@ -64,6 +89,7 @@ function typeTextShadow(text) {
   currentText = text;
   currentIndex = 0;
   isTyping = true;
+  playTypingSound(); 
 
   function type() {
     if (currentIndex < currentText.length) {
@@ -72,6 +98,7 @@ function typeTextShadow(text) {
       setTimeout(type, typingSpeed);
     } else {
       isTyping = false;
+      stopTypingSound(); 
     }
   }
 

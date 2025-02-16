@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ellie's Fate - Scene 2</title>
+    <link rel="stylesheet" href="entrance.css" />
+    <link href="https://fonts.cdnfonts.com/css/mangoli" rel="stylesheet" />
+  </head>
+  <body onclick="progressStory()">
+   
+    <div class="room">
+      <img src="images/entrance.webp" alt="Mansion Entrance" class="background" id="background" style="filter: brightness(50%);"/>
+    </div>
+
+   
+    <div class="ellie-container">
+      <img src="images/ellie.png" alt="Ellie" class="ellie" id="ellie" />
+    </div>
+
+   
+    <div class="dialogue-box" id="dialogue-box">
+      <p id="dialogue-text"></p>
+    </div>
+
+    
+    <div class="shadow" id="shadow">
+      <img src="images/shadow.png" alt="Shadowy Figure" />
+      <div class="shadow-dialogue" id="shadow-dialogue">
+        <p id="shadow-text"></p>
+      </div>
+    </div>
+
+    
+    <div class="riddle-scene" id="riddle-scene">
+      <p id="riddle-text"></p>
+      <input type="text" id="riddle-input" placeholder="Type your answer here..." />
+      <button onclick="checkRiddle()">Submit</button>
+    </div>
+
+    <script src="entrance.js"></script>
+  </body>
+</html>

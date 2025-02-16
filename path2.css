@@ -1,0 +1,127 @@
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+    cursor: pointer;
+    font-family: 'Mangoli', sans-serif;
+  }
+  
+  .room {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .ellie-container {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    transition: transform 1s ease-in-out;
+  }
+  
+  .ellie {
+    width: 500px;
+  }
+  
+  .dialogue-box {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    background: rgba(8, 27, 49, 0.9);
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    color: rgb(126, 168, 192);
+    font-size: 1.8rem;
+    text-align: left;
+    display: none;
+  }
+
+  .map-image {
+    width: 400px;
+    margin-top: -50px;
+    padding: 5%;
+  }
+  
+  .cipher-puzzle {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(8, 27, 49, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(126, 168, 192);
+    font-size: 1.5rem;
+    text-align: center;
+    display: none;
+  }
+  
+  .cipher-puzzle input {
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    border: 2px solid rgb(126, 168, 192);
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+  }
+  
+  .cipher-puzzle button {
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    border: 2px solid rgb(126, 168, 192);
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .cipher-puzzle button:hover {
+    background: rgba(126, 168, 192, 0.2);
+  }
+  
+  .chest-unlocked {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(8, 27, 49, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(126, 168, 192);
+    font-size: 1.5rem;
+    text-align: center;
+    display: none;
+  }
+  
+  .chest-unlocked button {
+    padding: 8px 5px;
+    font-size: 1.2rem;
+    border: 3px outset rgba(5, 10, 15, 0.904);
+    border-radius: 10px;
+    background: rgba(8, 27, 49);
+    color: white;
+    cursor: pointer;
+    align-items: center;
+  }
+  
+  .chest-unlocked button:hover {
+    background: rgba(126, 168, 192, 0.2);
+  }
+  
+  #proceed-button:hover {
+    border: 3px outset rgb(26, 64, 88);
+    background: rgb(0, 0, 0);
+      
+  }
