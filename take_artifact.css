@@ -78,4 +78,85 @@ body {
   .game-over-screen button:hover {
     background-color: rgba(130, 161, 199, 0.9);
   }
+
+ 
+@media screen and (max-width: 1024px) {
+  .ellie-container {
+    top: 70%;
+    left: 5%;
+  }
+  
+  .ellie {
+    width: 300px;
+  }
+
+  .dialogue-box {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+
+  .game-over-screen {
+    font-size: 1.8rem;
+  }
+
+  .game-over-screen button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .ellie-container {
+    top: 65%;
+    left: 10%;
+  }
+
+  .ellie {
+    width: 300px;
+  }
+
+  .dialogue-box {
+    width: 95%;
+    font-size: 1.3rem;
+  }
+
+  .game-over-screen {
+    font-size: 1.5rem;
+  }
+
+  .game-over-screen button {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .ellie-container {
+    top: 60%;
+    left: -5%;
+  }
+
+  .ellie {
+    width: 200px;
+  }
+
+  .dialogue-box {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 8px;
+  }
+
+  .game-over-screen {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .game-over-screen button {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}
+
   

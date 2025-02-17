@@ -117,3 +117,109 @@ body {
   .riddle-scene button:hover {
     background: rgba(126, 168, 192, 0.2);
   }
+
+  @media (max-width: 1024px) {
+    .ellie-container {
+      top: 70%;
+      left: -8%;
+    }
+  
+    .ellie {
+      width: 400px;
+    }
+  
+    .shadow {
+      width: 280px;
+      top: 60%;
+      right: 8%;
+    }
+  
+    .dialogue-box,
+    .shadow-dialogue {
+      width: 90%;
+      font-size: 1.6rem;
+    }
+  
+    .riddle-scene {
+      width: 80%;
+      font-size: 1.4rem;
+    }
+  
+    .riddle-scene input,
+    .riddle-scene button {
+      font-size: 1rem;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .ellie-container {
+      top: 65%;
+      left: 5%;
+    }
+  
+    .ellie {
+      width: 350px;
+    }
+  
+    .shadow {
+      width: 250px;
+      top: 50%;
+      right: 5%;
+    }
+  
+    .dialogue-box,
+    .shadow-dialogue {
+      width: 95%;
+      font-size: 1.4rem;
+    }
+  
+    .riddle-scene {
+      width: 85%;
+      font-size: 1.3rem;
+    }
+  
+    .riddle-scene input,
+    .riddle-scene button {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    .ellie-container {
+      top: 65%;
+      left: -3%;
+    }
+  
+    .ellie {
+      width: 250px;
+    }
+  
+    .shadow {
+      width: 150px;
+      top: 45%;
+      right: 3%;
+    }
+  
+    .dialogue-box,
+    .shadow-dialogue {
+      width: 100%;
+      font-size: 1.2rem;
+      padding: 8px;
+    }
+  
+    .riddle-scene {
+      width: 90%;
+      font-size: 1.2rem;
+      padding: 15px;
+    }
+  
+    .riddle-scene input,
+    .riddle-scene button {
+      font-size: 0.8rem;
+      padding: 6px;
+    }
+  }
+  

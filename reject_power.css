@@ -83,3 +83,71 @@ body {
     background-color: rgb(110, 141, 187);
   }
   
+  @media (max-width: 1024px) {
+    .ellie-container {
+        top: 65%;
+        left: 12%;
+    }
+
+    .ellie {
+        width: 350px;
+    }
+
+    .dialogue-box {
+        font-size: 1.6rem;
+    }
+
+    .game-over-screen h1 {
+        font-size: 2.5rem;
+    }
+
+    .game-over-screen button {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .ellie-container {
+        top: 60%;
+        left: 8%;
+    }
+
+    .ellie {
+        width: 300px;
+    }
+
+    .dialogue-box {
+        font-size: 1.4rem;
+    }
+
+    .game-over-screen h1 {
+        font-size: 2rem;
+    }
+
+    .game-over-screen button {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ellie-container {
+        top: 45%;
+        left: 5%;
+    }
+
+    .ellie {
+        width: 250px;
+    }
+
+    .dialogue-box {
+        font-size: 1.2rem;
+    }
+
+    .game-over-screen h1 {
+        font-size: 1.8rem;
+    }
+
+    .game-over-screen button {
+        font-size: 1.1rem;
+    }
+}

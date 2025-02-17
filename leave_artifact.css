@@ -67,3 +67,72 @@ body {
     margin: 10px;
   }
   
+ 
+@media screen and (max-width: 1024px) {
+  .ellie-container {
+    top: 55%;
+    left: 15%;
+  }
+
+  .ellie {
+    width: 250px;
+  }
+
+  .dialogue-box {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+
+  #game-over-screen {
+    font-size: 2.5rem;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .ellie-container {
+    top: 60%;
+    left: 10%;
+  }
+
+  .ellie {
+    width: 220px;
+  }
+
+  .dialogue-box {
+    width: 95%;
+    font-size: 1.3rem;
+  }
+
+  #game-over-screen {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ellie-container {
+    top: 65%;
+    left: 5%;
+  }
+
+  .ellie {
+    width: 180px;
+  }
+
+  .dialogue-box {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 8px;
+  }
+
+  #game-over-screen {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px;
+  }
+
+  #game-over-screen p {
+    font-size: 1.2rem;
+  }
+}

@@ -88,3 +88,111 @@ body {
     border: 3px outset rgb(26, 64, 88);
     background: rgb(0, 0, 0);
   }
+
+  @media (max-width: 1024px) {
+    .ellie-container {
+      top: 70%;
+      left: -8%;
+    }
+  
+    .ellie {
+      width: 400px;
+    }
+  
+    .gardener-container {
+      top: 70%;
+      width: 300px;
+      right: 15%;
+    }
+  
+    .gardener {
+      width: 100%;
+    }
+  
+    .dialogue-box {
+      font-size: 1.6rem;
+      width: 85%;
+    }
+  
+    .choice-buttons {
+      width: 80%;
+    }
+  
+    .choice-buttons button {
+      font-size: 1.1rem;
+      padding: 10px 8px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .ellie-container {
+      top: 70%;
+      left: 0;
+    }
+  
+    .ellie {
+      width: 350px;
+    }
+  
+    .gardener-container {
+      top: 70%;
+      width: 250px;
+      right: 5%;
+    }
+  
+    .gardener {
+      width: 100%;
+    }
+  
+    .dialogue-box {
+      font-size: 1.4rem;
+      width: 90%;
+    }
+  
+    .choice-buttons {
+      width: 85%;
+      padding: 20px;
+    }
+  
+    .choice-buttons button {
+      font-size: 1rem;
+      padding: 10px 5px;
+    }
+  }
+  
+ 
+  @media (max-width: 480px) {
+    .ellie-container {
+      top: 65%;
+      left: -8%;
+    }
+  
+    .ellie {
+      width: 250px;
+    }
+  
+    .gardener-container {
+      top: 65%;
+      width: 150px;
+      right: 5%;
+    }
+  
+    .gardener {
+      width: 100%;
+    }
+  
+    .dialogue-box {
+      font-size: 1.2rem;
+      width: 95%;
+    }
+  
+    .choice-buttons {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .choice-buttons button {
+      font-size: 1rem;
+      padding: 8px 5px;
+    }
+  }

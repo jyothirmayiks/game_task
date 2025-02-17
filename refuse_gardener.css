@@ -76,3 +76,81 @@ body {
     background: rgb(0, 0, 0);
       
   }
+
+
+  @media (max-width: 1024px) {
+    .ellie-container {
+      top: 70%;
+      left: 5%;
+    }
+  
+    .ellie {
+      width: 450px;
+    }
+  
+    .dialogue-box {
+      font-size: 1.6rem;
+      width: 85%;
+    }
+  
+    .choice-buttons {
+      padding: 35px;
+      width: 75%;
+    }
+  
+    .choice-buttons button {
+      font-size: 1.1rem;
+    }
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .ellie-container {
+      top: 65%;
+      left: 0;
+    }
+  
+    .ellie {
+      width: 400px;
+    }
+  
+    .dialogue-box {
+      font-size: 1.4rem;
+      width: 90%;
+    }
+  
+    .choice-buttons {
+      padding: 30px;
+      width: 80%;
+    }
+  
+    .choice-buttons button {
+      font-size: 1rem;
+    }
+  }
+  
+ 
+  @media (max-width: 480px) {
+    .ellie-container {
+      top: 60%;
+      left: -8%;
+    }
+  
+    .ellie {
+      width: 300px;
+    }
+  
+    .dialogue-box {
+      font-size: 1.2rem;
+      width: 95%;
+    }
+  
+    .choice-buttons {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    .choice-buttons button {
+      font-size: 0.9rem;
+    }
+  }

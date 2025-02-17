@@ -89,3 +89,102 @@ body {
     background: rgb(0, 0, 0);
       
   }
+
+  @media (max-width: 1024px) {
+    .ellie-container {
+      top: 70%;
+      left: -5%;
+    }
+  
+    .ellie {
+      width: 400px;
+    }
+  
+    .gardener-container {
+      top: 70%;
+      right: 8%;
+      width: 280px;
+    }
+  
+    .dialogue-box {
+      font-size: 1.6rem;
+      width: 85%;
+    }
+  
+    .choice-buttons {
+      width: 80%;
+      padding: 30px;
+    }
+    
+    .choice-buttons button {
+      font-size: 1.1rem;
+      padding: 10px;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .ellie-container {
+      top: 70%;
+      left: -5%;
+    }
+  
+    .ellie {
+      width: 350px;
+    }
+  
+    .gardener-container {
+      top: 70%;
+      right: 10%;
+      width: 250px;
+    }
+  
+    .dialogue-box {
+      font-size: 1.4rem;
+      width: 90%;
+    }
+  
+    .choice-buttons {
+      width: 85%;
+      padding: 25px;
+    }
+    
+    .choice-buttons button {
+      font-size: 1rem;
+      padding: 8px;
+    }
+  }
+  
+ 
+  @media (max-width: 480px) {
+    .ellie-container {
+      top: 65%;
+      left: -8%;
+    }
+  
+    .ellie {
+      width: 250px;
+    }
+  
+    .gardener-container {
+      top: 65%;
+      right: 12%;
+      width: 130px;
+    }
+  
+    .dialogue-box {
+      font-size: 1.2rem;
+      width: 95%;
+      padding: 8px;
+    }
+  
+    .choice-buttons {
+      width: 90%;
+      padding: 20px;
+    }
+    
+    .choice-buttons button {
+      font-size: 0.9rem;
+      padding: 6px;
+    }
+  }

@@ -75,3 +75,92 @@ body {
     border: 3px outset rgb(26, 64, 88);
     background: rgb(0, 0, 0);
   }
+
+
+@media screen and (max-width: 1024px) {
+  .ellie-container {
+    top: 65%;
+    left: -8%;
+  }
+  
+  .ellie {
+    width: 400px;
+  }
+
+  .dialogue-box {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+
+  .choice-buttons {
+    width: 80%;
+    padding: 30px;
+  }
+
+  .choice-buttons button {
+    font-size: 1rem;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .ellie-container {
+    top: 70%;
+    left: 3%;
+  }
+
+  .ellie {
+    width: 350px;
+  }
+
+  .dialogue-box {
+    width: 95%;
+    font-size: 1.3rem;
+  }
+
+  .choice-buttons {
+    width: 80%;
+    padding: 20px;
+    flex-direction: column;
+    gap: 10px;
+   
+  }
+
+  .choice-buttons button {
+    font-size: 1rem;
+    padding: 10px;
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .ellie-container {
+    top: 60%;
+    left: -8%;
+  }
+
+  .ellie {
+    width: 250px;
+  }
+
+  .dialogue-box {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 8px;
+  }
+
+  .choice-buttons {
+    width: 90%;
+    padding: 15px;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .choice-buttons button {
+    font-size: 0.9rem;
+    padding: 8px;
+    width: 100%;
+  }
+}

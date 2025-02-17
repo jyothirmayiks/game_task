@@ -119,3 +119,94 @@ body {
   .book-found button:hover {
     background: rgba(126, 168, 192, 0.2);
   }
+
+  @media (max-width: 1024px) {
+    .ellie-container {
+      top: 70%;
+      left: 5%;
+    }
+  
+    .ellie {
+      width: 350px;
+    }
+  
+    .dialogue-box {
+      font-size: 1.5rem;
+      width: 85%;
+    }
+  
+    .book-cipher, .book-found {
+      width: 70%;
+      font-size: 1.3rem;
+      padding: 15px;
+    }
+  
+    .book-found img {
+      width: 300px;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .ellie-container {
+      top: 70%;
+      left: 8%;
+    }
+  
+    .ellie {
+      width: 300px;
+    }
+  
+    .dialogue-box {
+      font-size: 1.3rem;
+      width: 90%;
+    }
+  
+    .book-cipher, .book-found {
+      width: 80%;
+      font-size: 1.2rem;
+      padding: 10px;
+    }
+  
+    .book-cipher input, .book-cipher button, .book-found button {
+      font-size: 1rem;
+      padding: 8px;
+    }
+  
+    .book-found img {
+      width: 250px;
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    .ellie-container {
+      top: 65%;
+      left: -8%;
+    }
+  
+    .ellie {
+      width: 250px;
+    }
+  
+    .dialogue-box {
+      font-size: 1.1rem;
+      width: 95%;
+      padding: 8px;
+    }
+  
+    .book-cipher, .book-found {
+      width: 90%;
+      font-size: 1rem;
+      padding: 8px;
+    }
+  
+    .book-cipher input, .book-cipher button, .book-found button {
+      font-size: 0.9rem;
+      padding: 6px;
+    }
+  
+    .book-found img {
+      width: 200px;
+    }
+  }

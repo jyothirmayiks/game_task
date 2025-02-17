@@ -84,13 +84,13 @@ body {
     }
   
     .ellie-container {
-      top: 40%;
-      left: 5%;
+      top: 70%;
+      left: -5%;
     }
   
     .shadow {
       width: 300px;
-      top: 60px;
+      top: 50%;
     }
   
     .dialogue-box, .shadow-dialogue {
@@ -105,13 +105,13 @@ body {
     }
   
     .ellie-container {
-      top: 50%;
+      top: 70%;
       left: 0%;
     }
   
     .shadow {
       width: 250px;
-      top: 40px;
+      top: 50%;
     }
   
     .dialogue-box, .shadow-dialogue {
@@ -126,13 +126,13 @@ body {
     }
   
     .ellie-container {
-      top: 60%;
+      top: 65%;
       left: -10%;
     }
   
     .shadow {
       width: 150px;
-      top: 20px;
+      top: 50%;
     }
   
     .dialogue-box, .shadow-dialogue {

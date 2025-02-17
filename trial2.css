@@ -226,4 +226,108 @@ body {
     background: rgb(2, 17, 36);
   }
 
+  @media (max-width: 1024px) {
+    .ellie-container {
+      top: 70%;
+      left: -8%;
+    }
+    .ellie {
+      width: 400px;
+    }
+    .shadow {
+      top: 60%;
+      right: 5%;
+      width: 300px;
+    }
+    .dialogue-box, .shadow-dialogue {
+      font-size: 1.5rem;
+      width: 90%;
+    }
+    .choice-buttons {
+      width: 80%;
+    }
+    .grid {
+      grid-template-columns: repeat(3, 100px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .ellie-container {
+      top: 70%;
+      left: 2%;
+    }
+    .ellie {
+      width: 350px;
+    }
+    .shadow {
+      top: 60%;
+      right: 2%;
+      width: 250px;
+    }
+    .dialogue-box, .shadow-dialogue {
+      font-size: 1.2rem;
+      width: 95%;
+    }
+    .choice-buttons {
+      width: 85%;
+    }
+    .grid {
+      grid-template-columns: repeat(2, 90px);
+      padding: 10px;
+    }
+    .memory-game{
+      width: 30%;
+    }
+    .key-image {
+      width: 140px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .ellie-container {
+      top: 65%;
+      left: -3%;
+    }
+    .ellie {
+      width: 250px;
+    }
+    .shadow {
+      top: 50%;
+      right: 0;
+      width: 150px;
+    }
+    .dialogue-box, .shadow-dialogue {
+      font-size: 1rem;
+      width: 100%;
+    }
+    .choice-buttons {
+      width: 90%;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .choice-buttons button {
+      font-size: 1rem;
+      padding: 6px;
+    }
+    .grid {
+      grid-template-columns: repeat(2, 80px);
+      padding: 20px;
+      margin-left: 11%;
+    }
+
+    .memory-game{
+      width: 60%;
+      height: 40%;
+      
+    }
+
+    .grid .card {
+      width: 50%;
+      height: 80%;
+    }
+
+    .key-image {
+      width: 100px;
+    }
+  }
   

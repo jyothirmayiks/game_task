@@ -35,19 +35,19 @@ function progressStory() {
 
   if (step === 0) {
     document.getElementById("dialogue-box").style.display = "block";
-    typeText("Ellie: No... I can’t take it. Something about this feels... wrong.", () => {
+    typeText("Ellie; No... I can’t take it. Something about this feels... wrong.", () => {
       step++;
       document.body.addEventListener("click", progressStory);
     });
   } else if (step === 1) {
-    typeText("Ellie: Wait—what's happening? The walls... they’re crumbling!", () => {
+    typeText("Ellie; Wait—what's happening? The walls... they’re crumbling!", () => {
       step++;
       crumbleSound.volume = 0.7;
       crumbleSound.play();
       document.body.addEventListener("click", progressStory);
     });
   } else if (step === 2) {
-    typeText("Ellie: No, no, no! I have to get out— *cough* The dust— I... I can’t breathe...", () => {
+    typeText("Ellie; No, no, no! I have to get out— *cough* The dust— I... I can’t breathe...", () => {
       step++;
       setTimeout(() => {
         fadeToBlack();
